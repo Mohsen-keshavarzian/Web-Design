@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Lexend Deca ;
+    src: url(LexendDeca-Thin.ttf);
+}
+
+@font-face {
+    font-family: Big Shoulders Display ;
+    src: url(BigShouldersDisplay-Black.ttf);
+}
+
+*{
+    direction: ltr;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    
+}
+
+h2{
+    font-family: Big Shoulders Display ;
+    font-weight: 400;
+    color: #f2f2f2;
+    font-size: xx-large;
+}
+
+p{
+    font-family: Lexend Deca;
+    font-weight: 700;
+    font-size: 15px;
+    color: #ffffff;
+    margin-bottom: 100px;
+    height: 200px;
+    padding-top: 20px;
+    display: flex;
+}
+
+button{
+    border: 2px solid #f2f2f2;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px 25px;
+    font-family: Lexend Deca;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: solid;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    text-align: center;
+}
+
+.parent{
+    border: none;
+    display: flex;
+    width: 1440px;
+    height: 58%;
+    justify-content: center;
+    align-items: center;
+    margin: 200px;
+    border-radius: 20px;
+}
+
+#div1{
+    width: 23%;
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 60px;
+    background-color: #e38826;
+    border-radius: 5px;
+    border: none;
+}
+
+#div2{
+    width: 24%;
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 60px;
+    background-color: #006970;
+    border: none;
+}
+
+#div3{
+    width: 23%;
+    height: 100%;
+    padding-left: 50px;
+    padding-top: 60px;
+    background-color: #004241;
+    border-radius: 5px;
+    border: none;
+}
+
+.button1{
+    background-color: #f2f2f2;
+    color: #e38826;
+}
+
+.button1:hover{
+    background-color: #e38826;
+    color: #f2f2f2;
+}
+
+.button2{
+    background-color: #f2f2f2;
+    color: #006970;
+}
+
+.button2:hover{
+    background-color: #006970;
+    color: #f2f2f2;
+}
+
+.button3{
+    background-color: #f2f2f2;
+    color: #004241;
+}
+
+.button3:hover{
+    background-color: #004241;
+    color: #f2f2f2;
+}
