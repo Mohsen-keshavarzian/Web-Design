@@ -1,0 +1,281 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    font-size: 16px;
+    transition: all ease-in 0.3s;
+}
+
+@font-face {
+    font-family: Lexend Deca;
+    src: url(LexendDeca-Thin.ttf);
+}
+
+@font-face {
+    font-family: Big Shoulders Display;
+    src: url(BigShouldersDisplay-Black.ttf);
+}
+
+body{
+    text-rendering: optimizeSpeed;
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+    line-height: 0;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+button{
+    border: 2px solid #f2f2f2;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px 25px;
+    font-family: Lexend Deca;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: solid;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    text-align: center;
+}
+
+
+
+:root{
+    --orange: hsl(22, 91%, 62%);
+    --purple: hsl(280, 64%, 44%);
+    --dark-cyan: hsl(179, 93%, 27%);
+
+    --white: hsl(0, 0%, 100%, 0.971);
+    --white-transparent: hsl(0, 0%, 100%, 0.727);
+    --light-gray-bg: hsl(0, 0%, 95%);
+}
+
+
+
+
+.Center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.bg-light{
+    background: radial-gradient(100% 100% at 50% 0%, #7A3491 0%, #56136C 100%);
+}
+
+.Container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 100%;
+    margin: 1.5rem;
+    max-width: 57.75rem;
+    box-shadow: 6px 6px 34px 15px #03182c26;
+    animation: slideIn 1s ease;
+    -webkit-animation: slideIn 1s ease;
+}
+
+.container_padding{
+    padding: 2.8rem;
+}
+
+.padding-1{
+    padding-bottom: 1.125rem;
+}
+
+.padding-2{
+    padding-bottom: 3.875rem;
+}
+
+.bg--1{
+    background: linear-gradient(180deg, #DC30B1 0%, #A13CCE 100%);
+}
+
+.bg--2{
+    background: linear-gradient(180deg, #252B52 0%, #1A2356 100%);
+}
+
+.bg--3{
+    background: linear-gradient(180deg, #F53794 0%, #FE6A51 100%);
+}
+
+.text-white{
+    color: var(--white);
+}
+
+.text--white--transparent{
+    color: var(--white-transparent);
+}
+
+.btn {
+    display: inline-block;
+    font-size: 0.9rem;
+    padding: 12px 36px;
+    border-radius: 2em;
+    color: gray;
+    background-color: var(--white);
+    border: solid 1px #00000000;
+}
+
+.btn:hover{
+    color: white;
+    font-weight: bold;
+    border-color: var(--white);
+    background-color: #ffffff05;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    border: solid 1px var(--white);
+}
+
+.h1{
+    font-family: Big Shoulders Display , cursive;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph{
+    font-family: Lexend Deca;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 25px;
+    max-width: 220px;
+}
+
+.rounded{
+    border-radius: 8px;
+}
+
+.rounded-left{
+    border-radius: 8px 0px 0px 8px;
+}
+
+.rounded-right{
+    border-radius: 0px 8px 8px 0px;
+}
+
+.rounded-top{
+    border-radius: 8px 8px 0px 0px;
+}
+
+.rounded-bottom{
+    border-radius: 0px 0px 8px 8px;
+}
+
+@keyframes slideIn{
+
+    0%{-webkit-transform: scale(1.3);
+        transform:scale(1.3);
+        opacity: 0;
+    }
+    100%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideIn{
+    0% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 0;   
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 850px) {
+
+    .btn{
+        font-size: 0.8rem;
+        padding: 6px 18px;
+    }
+}
+
+@media (max-width: 625px) {
+
+    .Container{
+        display: grid;
+        grid-template-columns: 1fr;
+        border-radius: 8px;
+    }
+
+    .paragraph{
+        max-width: 100%;
+    }
+
+    .btn{
+        font-size: 0.9rem;
+        padding: 12px 36px;
+    }
+
+    .padding-2 {
+        padding-bottom: 1.5rem;
+    }
+
+    .rounded-left{
+        border-radius: 8px 8px 0px 0px;
+    }
+
+    .rounded-right{
+        border-radius: 0px 0px 8px 8px;
+    }
+}
+
+@media (hover:hover) {
+
+    .card:hover {
+        filter: brightness(1.1);
+        padding-inline: 3.5rem;
+        transition: all ease 0.3s;
+    }
+
+    .Container:hover>.card:not(:hover) {
+        filter: grayscale(1.5);
+        transition: all ease 0.3s;
+    }
+
+    .card--1:hover,
+    .card--2:hover,
+    .card--3:hover {
+        transition: all ease 0.5s;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .card--1:hover{
+        background-image: url(images3/sedan.png);
+        transition: all ease 0.5s;
+    }
+
+    .card--2:hover{
+        background-image: url(images3/suv.png);
+        transition: all ease 0.5s;
+    }
+
+    .card--3:hover{
+        background-image: url(images3/luxury.png);
+        transition: all ease 0.5s;
+    }
+}
+
