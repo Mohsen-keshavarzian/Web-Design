@@ -264,17 +264,17 @@ button{
     }
 
     .card--1:hover{
-        background-image: url(images3/sedan.png);
+        background-image: url(sedan.png);
         transition: all ease 0.5s;
     }
 
     .card--2:hover{
-        background-image: url(images3/suv.png);
+        background-image: url(suv.png);
         transition: all ease 0.5s;
     }
 
     .card--3:hover{
-        background-image: url(images3/luxury.png);
+        background-image: url(luxury.png);
         transition: all ease 0.5s;
     }
 }
